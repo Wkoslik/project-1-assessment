@@ -53,15 +53,9 @@ const addOrSubtract = (e) => {
     let eventLocation = e.target.id;
     //user input
     let input = parseInt(document.getElementById("input").value);
-    let regex = /d/;
-    
-    
-    //check if input is a number
-    if(input != regex){
-        input = 0;
-    }
+
     //if the ID of the location is 'increase'
-     else if(eventLocation === "increase"){
+    if(eventLocation === "increase"){
         //add the input to the value
         value += input;
     } else {
